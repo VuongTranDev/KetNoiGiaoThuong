@@ -1,5 +1,5 @@
-@extends('FontEnd.layout.app')
+@extends('FrontEnd.layout.app')
 
 @section('renderBody')
-    @include('FontEnd.home.index')
+    @include('FrontEnd.home.index')
 @endsection
