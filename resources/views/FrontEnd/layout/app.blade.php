@@ -15,24 +15,26 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     {{-- link css --}}
-    <link rel="stylesheet" href="{{ asset('FontEnd/css/styleLoading.css') }}">
-    <link rel="stylesheet" href="{{ asset('FontEnd/css/styleHeader.css') }}">
-    <link rel="stylesheet" href="{{ asset('FontEnd/css/styleFooter.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/styleLoading.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/styleHeader.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/styleFooter.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/styleNews.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/styleHomePage.css') }}">
 
     {{-- <link rel="stylesheet" href="../../css/style.css"> --}}
 
 </head>
 
 <body>
-    @include('FrontEnd.layout.header')
+    @include('frontend.layout.header')
 
     <main style="margin-top: 85px;">
         @yield('renderBody')
     </main>
 
-    @include('FrontEnd.layout.footer')
+    @include('frontend.layout.footer')
 
-    @include('FrontEnd.component.loadingPage')
+    @include('frontend.component.loadingPage')
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">

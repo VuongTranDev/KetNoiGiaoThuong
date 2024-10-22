@@ -9,14 +9,14 @@
                 </div>
                 <div>
                     <a class="ms-2" href="">Đăng ký thành viên
-                        <img src="{{ asset('FontEnd/image/subscribe.png') }}" alt="Đăng ký thành viên" width="15">
+                        <img src="{{ asset('frontend/image/subscribe.png') }}" alt="Đăng ký thành viên" width="15">
                     </a>
                     <a href="">
-                        <img class="ms-2" src="{{ asset('FontEnd/image/language-en.png') }}" alt="Tiếng Anh"
+                        <img class="ms-2" src="{{ asset('frontend/image/language-en.png') }}" alt="Tiếng Anh"
                             width="20" height="12">
                     </a>
                     <a href="">
-                        <img class="ms-2" src="{{ asset('FontEnd/image/language-vn.png') }}" alt="Tiếng Việt"
+                        <img class="ms-2" src="{{ asset('frontend/image/language-vn.png') }}" alt="Tiếng Việt"
                             width="20" height="12">
                     </a>
                 </div>
@@ -93,42 +93,3 @@
         </div>
     </nav>
 </header>
-
-<style>
-    .search {
-        height: 40px;
-        border-radius: 40px;
-        padding: 10px;
-        border: 1px solid #3EAEF4;
-    }
-
-    .search:hover>.search-txt {
-        width: 230px;
-        padding: 0 10px;
-    }
-
-    .search-btn {
-        float: right;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        color: #3EAEF4;
-        text-decoration: none;
-    }
-
-    .search-txt {
-        border: none;
-        background: none;
-        outline: none;
-        float: left;
-        padding: 10px;
-        font-size: 16px;
-        transition: ease-in 0.4s;
-        line-height: 40px;
-        width: 130px;
-    }
-
-    .fas.fa-search {
-        height: 16;
-    }
-</style>
