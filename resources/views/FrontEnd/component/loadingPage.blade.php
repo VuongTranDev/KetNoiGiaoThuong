@@ -3,7 +3,7 @@
     <div class="loader" id="loader">
         <div class="box">
             <div class="logo">
-                <img src="{{ asset('FontEnd/image/logo.png') }}" alt="Công ty TNHH Thương Mại Dịch Vụ VietSunCo"
+                <img src="{{ asset('frontend/image/logo.png') }}" alt="Công ty TNHH Thương Mại Dịch Vụ VietSunCo"
                     width="50">
             </div>
         </div>
