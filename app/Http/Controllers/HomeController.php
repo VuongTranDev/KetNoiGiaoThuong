@@ -10,8 +10,4 @@ class HomeController extends Controller
     {
         return view('index');
     }
-
-    public function news() {
-        return view('FontEnd.home.news');
-    }
 }

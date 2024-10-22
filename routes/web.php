@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\frontend\NewsController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +20,4 @@ Route::get('/', [
     "index"
 ]);
 
-Route::get('/news', [HomeController::class, 'news'])->name('home.news');
+Route::get('/news', [NewsController::class, 'news']);
