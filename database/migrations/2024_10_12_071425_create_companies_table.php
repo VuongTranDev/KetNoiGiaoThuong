@@ -25,8 +25,8 @@ return new class extends Migration
             $table->foreignId('rating_id')->constrained('ratings','id')->cascadeOnDelete();
             $table->string('link',255)->unique();
             $table->foreignId('user_id')->constrained('users','id')->cascadeOnDelete();
-            $table->foreignId('address_id')->constrained('address','id')->cascadeOnDelete();
             $table->timestamps();
+
         });
     }
 
