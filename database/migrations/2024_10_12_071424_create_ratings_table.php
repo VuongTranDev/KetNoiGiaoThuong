@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('ratings', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->string('email')->unique();
-            $table->string('content');
-            $table->integer('numberstart');
+            $table->string('content')->nullable();
+            $table->integer('numberstart')->nullable();
             $table->timestamps();
         });
     }

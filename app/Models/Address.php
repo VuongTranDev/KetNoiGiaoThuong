@@ -9,7 +9,7 @@ class Address extends Model
 {
     use HasFactory;
     public function companies(){
-        return $this->hasMany(Categories::class,'address_id');
+        return $this->belongsTo(Companies::class,'company_id');
     }
-    
+
 }

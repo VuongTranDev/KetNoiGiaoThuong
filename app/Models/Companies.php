@@ -11,8 +11,8 @@ class Companies extends Model
     public function companyCategory(){
         return $this->hasMany(CompanyCategory::class,'company_id');
     }
-    public function address(){
-        return $this->belongsTo(Address::class,'address_id','id');
+    public function addresses(){
+        return $this->hasMany(Address::class,'company_id');
     }
     public function companyImage(){
         return $this->hasMany(CompanyImage::class,'company_id');

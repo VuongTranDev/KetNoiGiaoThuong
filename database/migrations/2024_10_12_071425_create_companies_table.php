@@ -21,8 +21,7 @@ return new class extends Migration
             $table->string('short_name');
             $table->string('phone_number');
             $table->string('slug');
-            $table->string('content');
-            $table->foreignId('rating_id')->constrained('ratings','id')->cascadeOnDelete();
+            $table->string('content')->nullable();
             $table->string('link',255)->unique();
             $table->foreignId('user_id')->constrained('users','id')->cascadeOnDelete();
             $table->timestamps();
