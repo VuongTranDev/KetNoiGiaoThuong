@@ -14,9 +14,15 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+require __DIR__.'/auth.php';
 Route::get('/', [
     HomeController::class,
     "index"
 ]);
 
 Route::get('/news', [HomeController::class, 'news'])->name('home.news');
+
+
+
+
+
