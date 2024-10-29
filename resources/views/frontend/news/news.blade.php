@@ -12,20 +12,39 @@
         <div class="row">
             <div class="col-lg-9 col-9" style="color: #777;">
                 @for ($i = 1; $i < 10; $i++)
-                    <a href="#ádas">
-                        <div class="news-group">
+                    <div class="news-group">
+                        <a href="#ádas" data-aos="fade-up">
                             <img class="img-news" src="{{ asset('frontend/image/media.jpg') }}" alt="">
-                            <div class="group-content">
+                        </a>
+                        <div class="group-content">
+                            <a href="#ádas" data-aos="fade-up">
                                 <h4>Lorem, ipsum dolor sit amet</h4>
                                 <p class="author-news"><b><a href="#">VietSunCo</a></b> - 02/10/2024</p>
-                                <p class="content-news">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente maiores
-                                    temporibus id dolor harum dolores ab rerum atque aliquid, doloribus accusantium sed
+                                <p class="content-news">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Sapiente
+                                    maiores
+                                    temporibus id dolor harum dolores ab rerum atque aliquid, doloribus accusantium
+                                    sed
                                     nisi...
                                 </p>
-                            </div>
+                            </a>
                         </div>
-                        <hr class="line-news">
-                    </a>
+                    </div>
+                    <hr class="line-news">
+
+
+                    {{-- <div class="col-6 col-sm-3 col-md-3 d-flex company-list">
+                        <div class="company-detail" align="center" data-aos="fade-up">
+                            <a href="{{ route('company.detail') }}" class="company-link">
+                                <img src="{{ asset('frontend/image/DaNang.png') }}" alt="Đà Nẵng" class="img-company"
+                                    loading="lazy">
+                                <p class="name-company">VietSunCo</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="me-2" style="font-size: 13px">1231212đ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div> --}}
                 @endfor
 
                 <nav aria-label="Page navigation example">

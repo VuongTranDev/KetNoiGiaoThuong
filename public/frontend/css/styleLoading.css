@@ -1,33 +1,33 @@
 .loading {
-    position: fixed; /* Thay đổi thành fixed để giữ loading ở vị trí cố định */
-    background-color: rgba(255, 255, 255, 0.7); /* Nền trắng với độ mờ */
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 9999; /* Đảm bảo nằm trên các phần tử khác */
+    z-index: 9999;
 }
 
 
 .loader {
-    height: 300px; /* Kích thước của loader */
-    aspect-ratio: 1; /* Đảm bảo loader có tỉ lệ 1:1 */
-    position: absolute; /* Đặt vị trí cố định trong khung loading */
-    top: 50%; /* Đặt từ trên xuống giữa */
-    left: 50%; /* Đặt từ trái vào giữa */
-    transform: translate(-50%, -50%); /* Dịch chuyển loader về giữa */
-    z-index: 99; /* Đảm bảo loader nằm trên các phần tử khác */
+    height: 300px;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
 }
 
 .loader .box {
     position: absolute;
-    background: rgba(150, 150, 150, 0.15); /* Điều chỉnh màu xám nhạt hơn để phù hợp với nền trắng */
-    background: linear-gradient(0deg, rgba(200, 200, 200, 0.2) 0%, rgba(150, 150, 150, 0.2) 100%); /* $background */
+    background: rgba(150, 150, 150, 0.15);
+    background: linear-gradient(0deg, rgba(200, 200, 200, 0.2) 0%, rgba(150, 150, 150, 0.2) 100%);
     border-radius: 50%;
-    border-top: 1px solid rgba(150, 150, 150, 1); /* Điều chỉnh màu biên cho hợp với nền */
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px -0px; /* Giảm bóng mờ để phù hợp với nền trắng */
+    border-top: 1px solid rgba(150, 150, 150, 1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px -0px;
     backdrop-filter: blur(5px);
-    animation: ripple 2s infinite ease-in-out; /* $duration */
+    animation: ripple 2s infinite ease-in-out;
 
 }
 
@@ -73,15 +73,15 @@
 }
 
 .loader .logo svg {
-    fill: grey; /* $logo-color */
+    fill: grey;
     width: 100%;
-    animation: color-change 2s infinite ease-in-out; /* $duration */
+    animation: color-change 2s infinite ease-in-out;
 }
 
 @keyframes ripple {
     0% {
         transform: scale(1);
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px -0px; /* Bóng mờ nhẹ cho nền trắng */
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px -0px;
     }
     50% {
         transform: scale(1.3);
@@ -95,12 +95,12 @@
 
 @keyframes color-change {
     0% {
-        fill: grey; /* $logo-color */
+        fill: grey;
     }
     50% {
-        fill: black; /* Thay đổi sang màu đen cho logo nổi bật trên nền trắng */
+        fill: black;
     }
     100% {
-        fill: grey; /* $logo-color */
+        fill: grey;
     }
 }

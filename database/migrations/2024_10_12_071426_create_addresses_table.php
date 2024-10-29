@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        if (!Schema::hasTable('ratings')) {
-            Schema::create('ratings', function (Blueprint $table) {
+        if (!Schema::hasTable('addresses')) {
+            Schema::create('addresses', function (Blueprint $table) {
                 $table->id();
-                $table->string('name');
-                $table->string('email')->unique();
-                $table->string('content');
-                $table->integer('numberstart');
+                $table->string('details', 255);
+                $table->string('addresses', 255);
+                $table->foreignId('provinces_id')->constrained('provinces', 'id')->cascadeOnDelete();
                 $table->timestamps();
             });
         }
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('ratings');
+        Schema::dropIfExists('addresses');
     }
 };

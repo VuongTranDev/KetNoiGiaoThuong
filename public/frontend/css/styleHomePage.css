@@ -43,32 +43,41 @@
 
 
 /* skdakjsdh */
-.product-list {
+.company-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.company-list {
     float: right;
     margin-bottom: 30px;
 
 }
 
-.product-link {
+.company-link {
     text-decoration: none;
     color: #585858;
 }
 
-.name-product {
+.name-company {
     margin: 20px 0 20px 0;
     font-weight: 600;
     font-size: 15px;
 }
 
-.product-detail {
+.company-detail {
     padding: 5px;
     width: 100%;
     position: relative;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgb(197, 197, 197);
+    box-shadow: 0 4px 10px rgb(226, 226, 226);
 }
 
-.img-product {
+.company-detail:hover {
+    box-shadow: 0 5px 10px rgb(211, 211, 211);
+}
+
+.img-company {
     width: 100%;
     height: 310px;
     display: block;
